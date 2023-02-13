@@ -12,15 +12,15 @@ int main()
 {
     f = -1;
     r = -1;
-    printf("\n Enter the size of Queue:");
+    printf("\nEnter the size of Queue:");
     scanf("%d", &n);
-    printf("\n\t Queue OPERATIONS USING ARRAY");
+    printf("\n\tQUEUE OPERATIONS USING ARRAY");
     printf("\n\t--------------------------------");
     printf("\n\t 1.INSERT\n\t 2.DELETE\n\t 3.DISPLAY\n\t 4.EXIT");
 
     do
     {
-        printf("\n Enter the Choice:");
+        printf("\n\nEnter the Choice:");
         scanf("%d", &choice);
 
         switch (choice)
@@ -44,12 +44,12 @@ int main()
         }
         case 4:
         {
-            printf("\n\t EXIT POINT ");
+            printf("\n\tEXIT POINT");
             break;
         }
         default:
         {
-            printf("\n\t Please Enter a Valid Choice(1/2/3/4)");
+            printf("\n\tPlease Enter a Valid Choice(1/2/3/4)");
         }
         }
     } while (choice != 4);
@@ -61,12 +61,12 @@ void insert()
 {
     if (r == n)
     {
-        printf("Queue is full ");
+        printf("Queue is full.");
     }
     else
     {
         int a;
-        printf("Enter a value to insert : ");
+        printf("Enter a value to insert:");
         scanf("%d", &a);
         queue[r] = a;
         r++;
@@ -76,11 +76,11 @@ void delete ()
 {
     if (f == r)
     {
-        printf("Queue is empty ");
+        printf("Queue is empty.");
     }
     else
     {
-        printf("deleted element is : %d", queue[f]);
+        printf("Deleted element is: %d", queue[f]);
         f++;
     }
 }
@@ -88,11 +88,11 @@ void display()
 {
     if (f == r)
     {
-        printf("Queue is empty ");
+        printf("Queue is empty.");
     }
     else
     {
-        printf("Queue elements : ");
+        printf("Queue elements: ");
         for (int i = f; i < r; i++)
         {
             printf("%d \t", queue[i]);
